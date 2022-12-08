@@ -1,5 +1,5 @@
-#include <stdio.h>
-/*
+#!/bin/bash
+   /*
  *second program in c
  */
 /**
