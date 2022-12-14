@@ -1,16 +1,14 @@
-#include <stdio.h>
-void    ft_print_alphabet(void) 
+#include "main.h"
+/**
+ * print_alphabet - print alphabet in lowercase
+ * Return: Always 0
+ */
+void print_alphabet(void)
 {
-char    letter;
-letter = 'a';
-while (letter <= 'z')
+char alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-putchar(letter);
-letter++; 
-} 
+_putchar(alphabet);
 }
-int main(void) 
-{
-ft_print_alphabet();
-return 0; 
+_putchar('\n');
 }
