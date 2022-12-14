@@ -1,17 +1,10 @@
-#include "putchar.h"
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+#include <stdio.h>
+int main( void ) 
 {
-char *sh = "putchar";
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
-_putchar('\n');
-return (0);
+  FILE *stream;
+  char *p, buffer[] = "This is the line of output\n";
+  int  ch;
+  ch = 0;
+  for( p = buffer; (ch != EOF) && (*p != '\0'); p++ )
+    ch = putchar( *p ); 
 }
